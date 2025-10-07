@@ -40,8 +40,8 @@ Node.js & npm
 Follow these steps to set up and run the project locally.
 
 1️⃣ Clone the repository
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
+git clone https://github.com/grinard0071988/flashcards-quizz.git
+cd flashcards-quizz
 
 2️⃣ Install dependencies
 npm install
@@ -88,4 +88,4 @@ NODE_VERSION = 14
 
 Click Deploy Site and wait for Netlify to finish the build.
 You’ll get a live URL like:
-https://your-app-name.netlify.app
+https://flashcards-quizz.netlify.app
