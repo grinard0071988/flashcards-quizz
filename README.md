@@ -1,16 +1,91 @@
-# React + Vite
+🧠 React Redux Toolkit Project
+📘 Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was developed as part of the Front-End Engineer Path in the Codecademy curriculum.
+The main objective was to apply and reinforce core concepts from React-Redux and the Redux Toolkit through practical implementation.
 
-Currently, two official plugins are available:
+The application demonstrates modular state management, efficient data flow, and a clear understanding of how Redux integrates into a modern React application.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎯 Learning Goals
 
-## React Compiler
+Configure modular slice files using createSlice() (@reduxjs/toolkit)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Set up a centralized store with configureStore() and integrate individual slices (@reduxjs/toolkit)
 
-## Expanding the ESLint configuration
+Use useSelector() and custom selectors to access data from the store (react-redux)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Create selectors for retrieving and manipulating specific parts of the state (react-redux)
+
+Dispatch actions using useDispatch() to trigger reactivity and update UI components (react-redux)
+
+Understand the Redux workflow:
+View → Middleware → Action (Dispatch) → Store → Updated View
+
+⚙️ Tech Stack
+
+React (Functional Components + Hooks)
+
+Redux Toolkit (@reduxjs/toolkit)
+
+React-Redux (useSelector, useDispatch)
+
+JavaScript (ES6+)
+
+HTML5 / CSS3
+
+Node.js & npm
+
+🚀 Getting Started
+
+Follow these steps to set up and run the project locally.
+
+1️⃣ Clone the repository
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+cd YOUR_REPO_NAME
+
+2️⃣ Install dependencies
+npm install
+
+
+💡 If you encounter dependency issues with older React versions, use:
+
+npm install --legacy-peer-deps
+
+3️⃣ Run the app in development mode
+npm start
+
+
+The app will run locally at:
+👉 http://localhost:3000
+
+4️⃣ Build for production
+npm run build
+
+
+This will create an optimized build in the /build directory.
+
+🌐 Deployment (Netlify)
+
+To deploy this app on Netlify:
+
+Push your project to a public GitHub repository.
+
+Log in to Netlify
+ and select “Add New Site → Import an Existing Project.”
+
+Connect your GitHub account and choose this repository.
+
+In the build settings, set:
+
+Build command: npm run build
+
+Publish directory: build
+
+Add an environment variable (if needed):
+
+NODE_VERSION = 14
+
+
+Click Deploy Site and wait for Netlify to finish the build.
+You’ll get a live URL like:
+https://your-app-name.netlify.app
