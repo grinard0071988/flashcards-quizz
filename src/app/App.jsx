@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, BrowserRouter, Routes } from "react-router-dom";
+import { Route, HashRouter as Router, Routes } from "react-router-dom";
 import NewQuizForm from "../components/NewQuizForm";
 import NewTopicForm from "../components/NewTopicForm";
 import Topics from "../features/topics/Topics";
@@ -10,7 +10,7 @@ import AppLayout from "./AppLayout";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<AppLayout />}>
           <Route path="topics" element={<Topics />} />
@@ -21,6 +21,6 @@ export default function App() {
           <Route path="quizzes/:quizId" element={<Quiz />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
